@@ -1,0 +1,188 @@
+/* Reset Browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+  color: #424d5d;
+  font-family: nudista-web, sans-serif;
+  background: #ffffff;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+a {
+  color: #19af96;
+  text-decoration: none;
+}
+a:visited {
+  color: #0c7c6a;
+}
+a:hover {
+  color: #19af96;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+
+h2 {
+  font-family: nudista-web, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.4em;
+}
+
+p {
+  font-family: nudista-web, sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+/* Custom Styles */
+
+.title-color {
+  color: #ffa400;
+}
+
+.parent {
+  height: calc(100vh - 72px);
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 0% 30% 40% 30% 0%;
+  grid-template-rows: 50px 80px repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 39%,
+    rgba(234, 234, 234, 1) 50%
+  );
+}
+
+.content {
+  grid-area: 3 / 2 / 5 / 5;
+  /* background: #fff;
+  border-radius: 10px;
+  margin-top: 18px;
+  padding-bottom: 60px; */
+}
+
+/* logo section */
+
+.logo {
+  grid-area: 2 / 2 / 3 / 5;
+  text-align: center;
+}
+.logo > img {
+  /* width: 250px; */
+  width: 160px;
+}
+
+/* section 1  */
+.section1 {
+  text-align: center;
+}
+.notification-icon {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.paragraph {
+  padding: 0px 60px 30px 60px;
+  font-size: 1.2em;
+}
+
+.button {
+  background: #ffa400;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 50px;
+  font-size: 1.3em;
+  font-weight: 400;
+  transition: all 140ms ease-out;
+  cursor: pointer;
+}
+.button:hover {
+  background: #e89500;
+  color: #fff;
+  box-shadow: 0px 4px 8px #dcdcdc;
+}
+
+.time {
+  margin-top: 12px;
+}
+
+footer {
+  padding: 14px 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer > .footer-content {
+  text-align: center;
+}
+
+footer a {
+  color: #717171;
+}
+
+footer a:hover {
+  color: #3d3d3d;
+}
+
+footer a:visited {
+  color: #3d3d3d;
+}
+
+footer p {
+  font-size: 0.9em;
+  margin-bottom: 0;
+  margin-top: 3px;
+  color: #808080;
+}
+
+@media screen and (max-width: 480px) {
+}
