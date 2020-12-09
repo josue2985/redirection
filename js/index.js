@@ -14,6 +14,14 @@
 //     window.location.href = "https://www.w3schools.com";
 //   }
 // }, 1000);
+showBanner();
+
+function showBanner() {
+    var meta = document.createElement("meta");
+    meta.name = "apple-itunes-app";
+    meta.content = "app-id=1515558947";
+    document.head.appendChild(meta);
+}
 
 var urlIos = "itms-apps://apps.apple.com/us/app/door-captain/id1515558947";
 var urlAndroid =
@@ -29,9 +37,9 @@ window.onload = function (event) {
   }
   if (/iPad|iPhone|iPod/i.test(userAgent)) {
     // console.log("ios");
-    // setTimeout(function () {
-    //   window.location = urlIos;
-    // }, 250);
+    setTimeout(function () {
+      window.location = urlIos;
+    }, 250);
   } else {
   }
 };
