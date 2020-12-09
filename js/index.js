@@ -29,9 +29,9 @@ window.onload = function (event) {
   }
   if (/iPad|iPhone|iPod/i.test(userAgent)) {
     // console.log("ios");
-    setTimeout(function () {
-      window.location = urlIos;
-    }, 250);
+    // setTimeout(function () {
+    //   window.location = urlIos;
+    // }, 250);
   } else {
   }
 };
